@@ -1,0 +1,61 @@
+<md-toolbar color="primary">
+  <span>Angular Material Components</span>
+</md-toolbar>
+<md-toolbar>
+  <span>Buttons</span>
+</md-toolbar>
+
+<md-tab-group>
+  <md-tab label="Raised Buttons">
+    <br />
+    <div class="button-row">
+      <button md-raised-button>Basic</button>
+      <button md-raised-button color="primary">Primary</button>
+      <button md-raised-button color="accent">Accent</button>
+      <button md-raised-button color="warn">Warn</button>
+      <button md-raised-button disabled>Disabled</button>
+      <a md-raised-button routerLink=".">Link</a>
+    </div>
+    <br />
+  </md-tab>
+  <md-tab label="Basic Buttons">
+    <br />
+    <div class="button-row">
+      <button md-button>Basic</button>
+      <button md-button color="primary">Primary</button>
+      <button md-button color="accent">Accent</button>
+      <button md-button color="warn">Warn</button>
+      <button md-button disabled>Disabled</button>
+      <a md-button routerLink=".">Link</a>
+    </div>
+    <br />
+  </md-tab>
+</md-tab-group>
+
+<br /><br />
+
+<md-toolbar>
+  <span>Form Fields</span>
+</md-toolbar>
+<br />
+
+<md-form-field class="example-full-width">
+  <input mdInput placeholder="Favorite food" value="Sushi">
+</md-form-field>
+
+<md-form-field>
+  <input mdInput [mdDatepicker]="picker" placeholder="Choose a date">
+  <md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+  <md-datepicker #picker></md-datepicker>
+</md-form-field>
+
+<br />
+
+<md-radio-group>
+  <md-radio-button value="1">Option 1</md-radio-button>&nbsp;
+  <md-radio-button value="2">Option 2</md-radio-button>
+</md-radio-group>
+
+<br /><br />
+
+<md-checkbox>Checked</md-checkbox>
